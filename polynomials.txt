@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int degree;
+    float coefficients[100], roots[100];
+
+    printf("Enter the degree of the polynomial: ");
+    scanf("%d", &degree);
+
+    printf("Enter the coefficients:\n");
+    for (int i = 0; i <= degree; i++) {
+        scanf("%f", &coefficients[i]);
+    }
+
+    // Implement a polynomial root-finding algorithm, such as Newton-Raphson or bisection method
+
+    // Print the roots
+    printf("The roots of the polynomial are:\n");
+    for (int i = 0; i < degree; i++) {
+        printf("Root %d = %.2f\n", i + 1, roots[i]);
+    }
+
+    return 0;
+}
